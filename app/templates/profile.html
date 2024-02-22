@@ -1,0 +1,35 @@
+{%extends "base.html" %}
+
+{% block main %}
+<div class="half top">
+  <div class="content">
+    <img src="{{ url_for('static', filename='images/face.png')}}" >
+    <h1>Mary Jane</h1>
+    <h2>@mjane</h2>
+    <h2>Kingston,Jamaica</h2>
+    <h2>{{ join }}</h2>
+  </div>
+</div>
+<div class="half bottom">
+  <div class="content">
+    <p>I am smart and talented young woman who loves<br>
+      website design and development.Contact me if<br>
+      you'd like to work together on a new project.
+    </p>
+    <table>
+      <tbody>
+        <tr>
+          <td>7</td>
+          <td>100</td>
+          <td>250</td>
+        </tr>
+        <tr class="descript">
+          <td>Posts</td>
+            <td>Following</td>
+            <td>Followers</td>
+          </tr>
+      </tbody>
+    </table>
+    <button type="btn"> Follow </button>
+</div>
+{% endblock %}
